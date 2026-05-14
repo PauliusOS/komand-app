@@ -8,9 +8,9 @@ These Terms of Use ("Terms") govern your access to and use of the Komand mobile 
 
 ## 1. Description of the App
 
-Komand is an iOS companion app for controlling a Claude Code runtime on your Mac. The App can connect to your Mac directly or through a developer-operated hosted relay. Core features include real-time chat, repository and file operations, terminal commands, photo attachments, voice dictation, pairing, trusted reconnect, and subscription-gated functionality.
+Komand is an iOS companion app for controlling AI coding agents and model harnesses running on your Mac — including, depending on your configuration, Anthropic's Claude Code, OpenAI's Codex, Moonshot's Kimi, Google's Gemini, Cursor, and other supported runtimes. The App can connect to your Mac directly or through a developer-operated hosted relay. Core features include real-time chat, repository and file operations, terminal commands, photo attachments, voice dictation, pairing, trusted reconnect, and subscription-gated functionality.
 
-Most coding, repository, and workspace operations run on your paired Mac via Claude Code, not on our hosted relay.
+Most coding, repository, and workspace operations run on your paired Mac via the AI coding agent you have selected, not on our hosted relay.
 
 ## 2. Eligibility
 
@@ -18,7 +18,7 @@ You must be at least 13 years old, or the minimum age required in your jurisdict
 
 ## 3. Pairing and Security
 
-The App does not require a Komand user account. Instead, it pairs with your Mac through a QR code flow and secure cryptographic session setup. You are responsible for keeping your paired devices secure and for activity performed through your paired environment, including any actions executed by Claude Code on your Mac at your direction.
+The App does not require a Komand user account. Instead, it pairs with your Mac through a QR code flow and secure cryptographic session setup. You are responsible for keeping your paired devices secure and for activity performed through your paired environment, including any actions executed by the AI coding agents running on your Mac at your direction.
 
 ## 4. Pro Subscription
 
@@ -53,18 +53,18 @@ To provide the App Store experience, Komand may operate hosted services such as:
 - a relay that routes traffic between your iPhone and paired Mac
 - a trusted reconnect endpoint
 
-These services are part of the Komand product offering. They do not run Claude Code for you and do not replace your paired Mac runtime.
+These services are part of the Komand product offering. They do not run any AI coding agent for you and do not replace your paired Mac runtime.
 
 ## 6. Third-Party Services
 
-The App also relies on third-party services, including:
+The App, and the AI coding agents it controls on your Mac, rely on third-party services. Depending on your configuration these may include:
 
 - **Apple** for App Store billing, subscriptions, and platform services
 - **Superwall** for paywall presentation and entitlement event handling
-- **Anthropic (Claude Code)** which runs on your paired Mac and communicates with Anthropic's API to generate responses
+- **AI model providers** that run or back the coding agents you have configured on your Mac — for example **Anthropic** (Claude Code), **OpenAI** (Codex), **Moonshot AI** (Kimi), **Google** (Gemini), **Cursor**, and any other providers you connect
 - **OpenAI / ChatGPT** for cloud voice transcription when you use dictation and the cloud path is selected
 
-Your use of those services may also be subject to their own terms and privacy policies.
+Your use of those services is also subject to their own terms and privacy policies. The Developer does not control, and is not responsible for, the behavior, availability, accuracy, or pricing of any third-party model provider.
 
 ## 7. Acceptable Use
 
@@ -77,7 +77,7 @@ You agree not to:
 - use the App to infringe the rights of others
 - use the App to generate or execute code intended to violate the rights, security, or privacy of third parties
 
-You are solely responsible for any code, commands, or repository actions executed by Claude Code on your Mac at your direction.
+You are solely responsible for any code, commands, or repository actions executed by AI coding agents on your Mac at your direction, and for compliance with the usage policies of the underlying model providers you have configured.
 
 ## 8. Open Source
 
@@ -93,7 +93,7 @@ We may update, change, suspend, or discontinue features of the App, hosted relay
 
 ## 11. Disclaimer of Warranties
 
-THE APP AND ANY RELATED SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, TO THE MAXIMUM EXTENT PERMITTED BY LAW. WE DO NOT GUARANTEE THAT THE APP, HOSTED RELAY, OR YOUR CONNECTED RUNTIME WILL ALWAYS BE AVAILABLE, ERROR-FREE, OR SECURE. CLAUDE CODE OUTPUTS, AGENT ACTIONS, AND MODEL RESPONSES MAY BE INCORRECT, INCOMPLETE, OR UNSAFE; YOU ARE RESPONSIBLE FOR REVIEWING THEM BEFORE RELYING ON OR EXECUTING THEM.
+THE APP AND ANY RELATED SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, TO THE MAXIMUM EXTENT PERMITTED BY LAW. WE DO NOT GUARANTEE THAT THE APP, HOSTED RELAY, OR ANY CONNECTED AI CODING AGENT WILL ALWAYS BE AVAILABLE, ERROR-FREE, OR SECURE. AI CODING AGENT OUTPUTS, TOOL CALLS, AGENT ACTIONS, AND MODEL RESPONSES — FROM ANY PROVIDER, INCLUDING ANTHROPIC, OPENAI, MOONSHOT, GOOGLE, CURSOR, OR OTHERS — MAY BE INCORRECT, INCOMPLETE, OR UNSAFE; YOU ARE RESPONSIBLE FOR REVIEWING THEM BEFORE RELYING ON OR EXECUTING THEM.
 
 ## 12. Limitation of Liability
 

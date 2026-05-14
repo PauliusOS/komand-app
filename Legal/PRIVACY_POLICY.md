@@ -2,13 +2,13 @@
 
 **Last updated:** May 13, 2026
 
-This Data Protection Notice explains how the Komand mobile application ("App"), developed by Paulius Masalskas ("Developer", "we", "us", or "our"), handles your information. Komand is designed to let you control a Claude Code runtime on your Mac from your iPhone. Most conversation and workspace activity is processed on your paired Mac, but the App Store version can also use developer-operated relay infrastructure to connect your devices.
+This Data Protection Notice explains how the Komand mobile application ("App"), developed by Paulius Masalskas ("Developer", "we", "us", or "our"), handles your information. Komand is designed to let you control AI coding agents and model harnesses running on your Mac — including, depending on your configuration, Anthropic's Claude Code, OpenAI's Codex, Moonshot's Kimi, Google's Gemini, Cursor, and other supported runtimes — from your iPhone. Most conversation and workspace activity is processed on your paired Mac, but the App Store version can also use developer-operated relay infrastructure to connect your devices.
 
 ---
 
 ## 1. Overview
 
-Komand is a local-first remote companion for Claude Code on your Mac. In practice, this means:
+Komand is a local-first remote companion for AI coding agents on your Mac. In practice, this means:
 
 - Your conversations, repository actions, and workspace interactions are primarily processed on your paired Mac.
 - We do not operate user accounts or cloud databases for your chat content.
@@ -21,10 +21,10 @@ Komand is a local-first remote companion for Claude Code on your Mac. In practic
 
 ### 2.1 Information You Provide Through the App
 
-- **Chat messages and prompts** — Your messages are sent from the iPhone to your paired Mac for processing by Claude Code. After the secure transport handshake is complete, the relay forwards encrypted payloads and cannot read message contents.
+- **Chat messages and prompts** — Your messages are sent from the iPhone to your paired Mac for processing by the AI coding agent you have selected (for example Claude Code, Codex, Kimi, Gemini, or Cursor). After the secure transport handshake is complete, the relay forwards encrypted payloads and cannot read message contents.
 - **Photo attachments** — Images you attach from the camera or photo library are sent to your paired Mac over the secure channel.
 - **Voice recordings** — When you use dictation, the App records a temporary audio file on your iPhone. Depending on availability, the audio is either (a) uploaded from the iPhone to OpenAI/ChatGPT for transcription, with the request authenticated using a ChatGPT token resolved from your paired Mac over the encrypted Komand channel, or (b) transcribed on-device using Apple's Speech framework. The fallback is decided per recording.
-- **Repository and workspace actions** — Commands you initiate from the App, such as commit, pull, push, branch, file edits, terminal commands, or status actions, are executed on your paired Mac by Claude Code.
+- **Repository and workspace actions** — Commands you initiate from the App, such as commit, pull, push, branch, file edits, terminal commands, or status actions, are executed on your paired Mac by the selected AI coding agent.
 
 ### 2.2 Information Collected Automatically
 
@@ -80,17 +80,24 @@ This infrastructure may process:
 
 Once the secure session is active, the hosted relay does **not** decrypt your Komand application payloads.
 
-### 4.2 Anthropic (Claude Code)
+### 4.2 AI Model Providers (selected by you on your Mac)
 
-Claude Code runs on your paired Mac and communicates with Anthropic's API to generate responses. Your prompts, file contents shared with Claude Code, and tool-use results are transmitted from your Mac to Anthropic according to your Mac-side Claude Code configuration and authentication (for example, your Anthropic API key or Claude subscription).
+Komand orchestrates AI coding agents that run on your paired Mac. Each agent communicates directly from your Mac with its own upstream model provider, using credentials and configuration you have set up on the Mac (for example, an API key, OAuth session, or paid subscription). Depending on which provider you select in the App, the corresponding company processes your prompts, attached file contents, and tool-use results to generate responses.
 
-- Anthropic privacy policy: [anthropic.com/legal/privacy](https://www.anthropic.com/legal/privacy)
+Providers that may be involved, depending on your configuration, include:
 
-The Developer does not operate or intermediate that connection — it is established directly by Claude Code on your Mac.
+- **Anthropic** — for Claude Code and Claude models. Privacy policy: [anthropic.com/legal/privacy](https://www.anthropic.com/legal/privacy)
+- **OpenAI** — for Codex and ChatGPT-based coding sessions. Privacy policy: [openai.com/privacy](https://openai.com/privacy)
+- **Moonshot AI** — for Kimi (Kimi for Coding). Privacy policy: [moonshot.cn/privacy](https://www.moonshot.cn/privacy) (where available)
+- **Google** — for Gemini. Privacy policy: [policies.google.com/privacy](https://policies.google.com/privacy)
+- **Cursor** — for Cursor's Composer and related models. Privacy policy: [cursor.com/privacy](https://cursor.com/privacy)
+- **Any additional model providers or harnesses** you connect on your Mac, such as self-hosted or third-party model endpoints.
 
-### 4.3 OpenAI / ChatGPT
+The Developer does not operate or intermediate these connections — they are established directly by the agent on your Mac with the provider you have chosen. Each provider's handling of your data is governed by its own terms and privacy policy.
 
-When you use dictation and the cloud transcription path is selected, your audio recording is sent from the iPhone to OpenAI/ChatGPT for speech-to-text transcription.
+### 4.3 OpenAI / ChatGPT (Dictation)
+
+When you use dictation and the cloud transcription path is selected, your audio recording is sent from the iPhone to OpenAI/ChatGPT for speech-to-text transcription. This is independent of which coding-agent provider you have selected.
 
 - Privacy policy: [openai.com/privacy](https://openai.com/privacy)
 
@@ -123,7 +130,7 @@ Apple provides:
 
 ### 5.2 On Your Mac
 
-Your paired Mac runs the local Komand bridge and the Claude Code runtime. Chat handling, repository operations, terminal commands, and workspace actions are performed there.
+Your paired Mac runs the local Komand bridge and the AI coding agent runtimes you have configured (such as Claude Code, Codex, Kimi, Gemini, or Cursor). Chat handling, repository operations, terminal commands, and workspace actions are performed there.
 
 ### 5.3 On Hosted Relay Infrastructure
 
@@ -164,7 +171,7 @@ You can manage or cancel your subscription through Apple account settings or thr
 
 Depending on your jurisdiction, you may have rights to access, correct, delete, restrict, or object to the processing of personal information, and to request portability where applicable.
 
-Because Komand is primarily local-first, much of your data remains under your direct control on your devices. We do not maintain a centralized database of your personal data. Some data may be processed or retained by Apple, Superwall, Anthropic, and OpenAI according to their own operational needs and policies.
+Because Komand is primarily local-first, much of your data remains under your direct control on your devices. We do not maintain a centralized database of your personal data. Some data may be processed or retained by Apple, Superwall, and any AI model providers you have configured on your Mac (such as Anthropic, OpenAI, Moonshot, Google, or Cursor) according to their own operational needs and policies.
 
 ### 8.1 California Notice
 
@@ -180,7 +187,7 @@ The App is not directed to children under 13, or the minimum age required by loc
 
 ## 10. International Transfers
 
-Depending on where you use the App and where service providers or hosted infrastructure are located, data processed by Apple, Superwall, Anthropic, OpenAI, or the hosted relay may be handled outside your country of residence.
+Depending on where you use the App and where service providers or hosted infrastructure are located, data processed by Apple, Superwall, the hosted relay, or any AI model provider you have configured on your Mac (such as Anthropic, OpenAI, Moonshot, Google, or Cursor) may be handled outside your country of residence.
 
 ## 11. Changes to This Policy
 
