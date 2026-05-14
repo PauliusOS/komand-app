@@ -130,7 +130,7 @@ Apple provides:
 
 ### 5.2 On Your Mac
 
-Your paired Mac runs the local Komand bridge and the AI coding agent runtimes you have configured (such as Claude Code, Codex, Kimi, Gemini, or Cursor). Chat handling, repository operations, terminal commands, and workspace actions are performed there.
+Your paired Mac runs Komand and the AI coding agent runtimes you have configured (such as Claude Code, Codex, Kimi, Gemini, or Cursor). Chat handling, repository operations, terminal commands, and workspace actions are performed there.
 
 ### 5.3 On Hosted Relay Infrastructure
 

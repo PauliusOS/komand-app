@@ -71,7 +71,7 @@ Your use of those services is also subject to their own terms and privacy polici
 You agree not to:
 
 - use the App for unlawful purposes
-- interfere with or abuse the App, bridge, relay, or connected runtime
+- interfere with or abuse the App, the Komand software on your Mac, the relay, or any connected agent runtime
 - transmit malware, harmful payloads, or abusive traffic
 - attempt to bypass security, entitlement, or pairing protections
 - use the App to infringe the rights of others
